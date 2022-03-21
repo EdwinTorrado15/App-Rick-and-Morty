@@ -42,12 +42,14 @@ window
         atributos.appendChild(genero);
         atributos.className = 'card-body text-center'
 
+        //Aca iran contenidos las cartas
         const carta = document.createElement('div')
         carta.appendChild(imagen);
         carta.appendChild(atributos);
         carta.className = 'card p-3'
         carta.style = 'width: 200px; height: 400px;'
 
+        //Aca se crean los divs para hacer las col
         const contenedorColumnas = document.createElement('div')
         contenedorColumnas.appendChild(carta);
         contenedorColumnas.className = 'col-6 col-xl-3 my-5'
