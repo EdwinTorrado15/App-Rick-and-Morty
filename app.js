@@ -4,7 +4,6 @@ const url = 'https://rickandmortyapi.com/api/character';
 const app = document.querySelector('#app');
 app.className = 'row'
 
-
 //Consumimos la api
 window
 .fetch(url)
@@ -34,6 +33,14 @@ window
         const genero = document.createElement('p');
         genero.textContent = item.gender;
 
+        // Creamos el origen
+        const origen = document.createElement('p');
+        origen.textContent = item.origin.name;
+
+        // Creamos la locacion
+        const locacion = document.createElement('p');
+        locacion.textContent = item.location.name;
+
         //Creamos el cuerpo de la carta
         const atributos = document.createElement('div')
         atributos.appendChild(nombre);
@@ -46,13 +53,13 @@ window
         const carta = document.createElement('div')
         carta.appendChild(imagen);
         carta.appendChild(atributos);
-        carta.className = 'card p-3'
-        carta.style = 'width: 200px; height: 400px;'
+        carta.className = 'card'
+        carta.style = 'width: 17rem; height: 30rem;'
 
         //Aca se crean los divs para hacer las col
         const contenedorColumnas = document.createElement('div')
         contenedorColumnas.appendChild(carta);
-        contenedorColumnas.className = 'col-6 col-xl-3 my-5'
+        contenedorColumnas.className = 'col-6 col-xl-4 my-4'
 
         personajes.push(contenedorColumnas);
     })
