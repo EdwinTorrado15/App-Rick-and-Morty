@@ -11998,6 +11998,11 @@ h1, .h1 {
 
 .card {
   background-color: #3c3e44;
+  border-radius: 10px;
+}
+
+.card-img-top {
+  border-radius: 10px 10px 0px 0px;
 }
 
 h3, .h3 {
@@ -12011,5 +12016,9 @@ h3:hover, .h3:hover {
 
 p {
   color: white;
+}
+
+.origen:hover {
+  color: orange;
 }
 /*# sourceMappingURL=estilos.css.map */

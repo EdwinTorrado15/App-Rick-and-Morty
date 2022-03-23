@@ -34,6 +34,10 @@ h1{
 //Carta
 .card{
     background-color: #3c3e44;
+    border-radius: 10px;
+}
+.card-img-top{
+    border-radius: 10px 10px 0px 0px;
 }
 h3{
     color: white;
@@ -44,4 +48,7 @@ h3:hover{
 }
 p{
     color: white;
+}
+.origen:hover{
+    color: orange;
 }

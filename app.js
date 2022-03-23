@@ -36,10 +36,7 @@ window
         // Creamos el origen
         const origen = document.createElement('p');
         origen.textContent = item.origin.name;
-
-        // Creamos la locacion
-        const locacion = document.createElement('p');
-        locacion.textContent = item.location.name;
+        origen.className = "origen";
 
         //Creamos el cuerpo de la carta
         const atributos = document.createElement('div')
@@ -47,6 +44,7 @@ window
         atributos.appendChild(estado);
         atributos.appendChild(especie);
         atributos.appendChild(genero);
+        atributos.appendChild(origen);
         atributos.className = 'card-body text-center'
 
         //Aca iran contenidos las cartas
@@ -54,12 +52,12 @@ window
         carta.appendChild(imagen);
         carta.appendChild(atributos);
         carta.className = 'card'
-        carta.style = 'width: 17rem; height: 30rem;'
+        carta.style = 'width: auto; margin:auto;'
 
         //Aca se crean los divs para hacer las col
         const contenedorColumnas = document.createElement('div')
         contenedorColumnas.appendChild(carta);
-        contenedorColumnas.className = 'col-6 col-xl-4 my-4'
+        contenedorColumnas.className = 'col-6 col-xl-3 col-lg-4 col-md-4 col-sm my-4'
 
         personajes.push(contenedorColumnas);
     })
